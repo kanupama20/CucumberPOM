@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>SalesForce-New</td>
+        <td>1</td>
+      <td>06 Oct 2022, 15:23</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.click_on_usermenu_drop_down_s_logout_link()</td>
+              <td>1</td>
+              <td class="duration" data-value="689306500">0.689</td>
+              <td class="duration" data-value="689306500">0.689</td>
+              <td class="duration" data-value="689306500">0.689</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.close_browser()</td>
+              <td>5</td>
+              <td class="duration" data-value="214538120">0.214</td>
+              <td class="duration" data-value="214538120">0.313</td>
+              <td class="duration" data-value="1072690600">1.072</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.i_click_continue_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="550688700">0.550</td>
+              <td class="duration" data-value="550688700">0.550</td>
+              <td class="duration" data-value="550688700">0.550</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.i_click_forgot_password_link()</td>
+              <td>1</td>
+              <td class="duration" data-value="448858200">0.448</td>
+              <td class="duration" data-value="448858200">0.448</td>
+              <td class="duration" data-value="448858200">0.448</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.i_click_login_button()</td>
+              <td>4</td>
+              <td class="duration" data-value="1158807375">1.158</td>
+              <td class="duration" data-value="1158807375">1.526</td>
+              <td class="duration" data-value="4635229500">4.635</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.i_click_rememberme_chkbox()</td>
+              <td>1</td>
+              <td class="duration" data-value="159349400">0.159</td>
+              <td class="duration" data-value="159349400">0.159</td>
+              <td class="duration" data-value="159349400">0.159</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.i_enter_clear_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="173798200">0.173</td>
+              <td class="duration" data-value="173798200">0.173</td>
+              <td class="duration" data-value="173798200">0.173</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.i_enter_invalid_login()</td>
+              <td>1</td>
+              <td class="duration" data-value="285527600">0.285</td>
+              <td class="duration" data-value="285527600">0.285</td>
+              <td class="duration" data-value="285527600">0.285</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.i_enter_invalid_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="679892200">0.679</td>
+              <td class="duration" data-value="679892200">0.679</td>
+              <td class="duration" data-value="679892200">0.679</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.i_enter_valid_login()</td>
+              <td>3</td>
+              <td class="duration" data-value="359479566">0.359</td>
+              <td class="duration" data-value="359479566">0.486</td>
+              <td class="duration" data-value="1078438700">1.078</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.i_enter_valid_login_in_forgot_password_page1()</td>
+              <td>1</td>
+              <td class="duration" data-value="303498400">0.303</td>
+              <td class="duration" data-value="303498400">0.303</td>
+              <td class="duration" data-value="303498400">0.303</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.i_enter_valid_password()</td>
+              <td>2</td>
+              <td class="duration" data-value="417352000">0.417</td>
+              <td class="duration" data-value="417352000">0.504</td>
+              <td class="duration" data-value="834704000">0.834</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.i_should_get_error_as(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="545484500">0.545</td>
+              <td class="duration" data-value="545484500">0.560</td>
+              <td class="duration" data-value="1090969000">1.090</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.i_should_get_page_title_as(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="3163222650">3.163</td>
+              <td class="duration" data-value="3163222650">3.213</td>
+              <td class="duration" data-value="6326445300">6.326</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.i_should_see_a_message(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="74822800">0.074</td>
+              <td class="duration" data-value="74822800">0.074</td>
+              <td class="duration" data-value="74822800">0.074</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.setUp()</td>
+              <td>5</td>
+              <td class="duration" data-value="2329144460">2.329</td>
+              <td class="duration" data-value="2329144460">5.127</td>
+              <td class="duration" data-value="11645722300">11.645</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.user_on(java.lang.String)</td>
+              <td>9</td>
+              <td class="duration" data-value="7239033">0.007</td>
+              <td class="duration" data-value="7239033">0.051</td>
+              <td class="duration" data-value="65151300">0.065</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">salesForceNew.test.steps.SalesforceTestDefination.username_field_should_display_username()</td>
+              <td>1</td>
+              <td class="duration" data-value="1027644500">1.027</td>
+              <td class="duration" data-value="1027644500">1.027</td>
+              <td class="duration" data-value="1027644500">1.027</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>18</td>
+            <td>42</td>
+            <td class="duration">0.741</td>
+            <td class="duration">11.645</td>
+            <td class="duration">31.142</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

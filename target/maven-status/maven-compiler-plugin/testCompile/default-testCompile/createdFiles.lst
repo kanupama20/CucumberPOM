@@ -1,0 +1,11 @@
+salesForceNew\test\pages\login\ForgotPasswordPage2.class
+salesForceNew\test\tests\ReadProperties.class
+salesForceNew\test\utility\CommonUtilities.class
+salesForceNew\test\tests\RunnerSalesforce.class
+salesForceNew\test\pages\home\HomePage.class
+salesForceNew\test\pages\login\LoginPage.class
+salesForceNew\test\utility\Constants.class
+salesForceNew\test\utility\GenerateReports.class
+salesForceNew\test\pages\login\ForgotPasswordPage1.class
+salesForceNew\test\pages\base\BasePage.class
+salesForceNew\test\steps\SalesforceTestDefination.class

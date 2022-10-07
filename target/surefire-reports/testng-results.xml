@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-06T15:22:45 CDT" name="Surefire suite" finished-at="2022-10-06T15:23:17 CDT" duration-ms="32217">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:salesForceNew.test.tests.RunnerSalesforce@44a664f2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-10-06T15:22:45 CDT" name="Surefire test" finished-at="2022-10-06T15:23:17 CDT" duration-ms="32217">
+      <class name="salesForceNew.test.tests.RunnerSalesforce">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:salesForceNew.test.tests.RunnerSalesforce@44a664f2]" started-at="2022-10-06T15:22:45 CDT" name="setUpClass" finished-at="2022-10-06T15:22:46 CDT" duration-ms="603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:salesForceNew.test.tests.RunnerSalesforce@44a664f2]" started-at="2022-10-06T15:22:46 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-06T15:22:57 CDT" duration-ms="11167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:salesForceNew.test.tests.RunnerSalesforce@44a664f2]" started-at="2022-10-06T15:22:57 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-06T15:23:00 CDT" duration-ms="3619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:salesForceNew.test.tests.RunnerSalesforce@44a664f2]" started-at="2022-10-06T15:23:00 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-06T15:23:05 CDT" duration-ms="4167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with clear password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:salesForceNew.test.tests.RunnerSalesforce@44a664f2]" started-at="2022-10-06T15:23:05 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-06T15:23:14 CDT" duration-ms="9141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Testing remember me chkbox"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:salesForceNew.test.tests.RunnerSalesforce@44a664f2]" started-at="2022-10-06T15:23:14 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-06T15:23:17 CDT" duration-ms="3319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Testing forgot password link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:salesForceNew.test.tests.RunnerSalesforce@44a664f2]" started-at="2022-10-06T15:23:17 CDT" name="tearDownClass" finished-at="2022-10-06T15:23:17 CDT" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- salesForceNew.test.tests.RunnerSalesforce -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
